@@ -5,62 +5,70 @@
 </section>
 
 <div class="container">
+  <!--  <p><strong>Coming Soon: Support Contact Info</strong></p>
+  <p>We thank you for your patience while we are developing workplace_ help center to provide you the best information possible.  workplace_ help center will soon be able to detect your designated support team and provide you their contact information.  In the meantime, please feel free to <a href="mailto:helpdesk@os33.com">email us</a> and we'll be happy to provide the best contact info.</p>
+  <p>-Your workplace_ support team</p> -->
   <section class="section knowledge-base">
     <section class="categories blocks">
       <ul class="blocks-list">
         {{#each categories}}
-          {{#if ../has_multiple_categories}}
-            <li class="blocks-item">
-              <a href='{{url}}' class="blocks-item-link">
-                <h4 class="blocks-item-title">{{name}}</h4>
-                <p class="blocks-item-description">{{excerpt description}}</p>
-              </a>
-            </li>
-          {{else}}
-            {{#each sections}}
-              <li class="blocks-item {{#if internal}}blocks-item-internal{{/if}}">
-                <a href='{{url}}' class="blocks-item-link">
-                  <h4 class="blocks-item-title">
-                    {{name}}
-                    {{#if internal}}
-                      <span class="icon-lock" title="{{t 'internal'}}"></span>
-                    {{/if}}
-                  </h4>
-                  <p class="blocks-item-description">{{excerpt description}}</p>
-                </a>
-              </li>
-            {{/each}}
-          {{/if}}
+        {{#is id 115000243288}}
+        {{#each sections}}
+        {{#each articles}}
+        <li class="blocks-item">
+            <span class="blocks-item-link">
+              <h3 class="blocks-item-title">{{title}}</h3>
+              <p class="blocks-item-description">{{body}}</p>
+            </span>
+        </li>
+        {{/each}}
+        {{/each}}
+        {{/is}}
+        {{/each}}
+      </ul>
+    </section>
+
+    <section class="categories blocks">
+      <ul class="blocks-list">
+        {{#each categories}}
+        {{#isnt id 115000243288}}
+        <li class="blocks-item">
+          <a href='{{url}}' class="blocks-item-link">
+            <h4 class="blocks-item-title">{{name}}</h4>
+            <p class="blocks-item-description">{{excerpt description}}</p>
+          </a>
+        </li>
+        {{/isnt}}
         {{/each}}
       </ul>
       {{pagination}}
     </section>
 
     {{#if promoted_articles}}
-      <section class="articles">
-        <h3>{{t 'promoted_articles'}}</h3>
-        <ul class="article-list promoted-articles">
-          {{#each promoted_articles}}
-            <li class="promoted-articles-item">
-              <a href="{{url}}">
-                {{title}}
-              </a>
-            </li>
-          {{/each}}
-        </ul>
-      </section>
+    <section class="articles">
+      <h3>{{t 'promoted_articles'}}</h3>
+      <ul class="article-list promoted-articles">
+        {{#each promoted_articles}}
+        <li class="promoted-articles-item">
+          <a href="{{url}}">
+            {{title}}
+          </a>
+        </li>
+        {{/each}}
+      </ul>
+    </section>
     {{/if}}
   </section>
 
   {{#if help_center.community_enabled}}
-    <section class="section community">
-      <h2>{{t 'community'}}</h2>
-      {{#link 'community' class='community-link'}}
-        {{t 'join_conversation'}}
-      {{/link}}
+  <section class="section community">
+    <h2>{{t 'community'}}</h2>
+    {{#link 'community' class='community-link'}}
+    {{t 'join_conversation'}}
+    {{/link}}
 
-      <div class="community-image"></div>
-    </section>
+    <div class="community-image"></div>
+  </section>
   {{/if}}
 
   <section class="section activity">

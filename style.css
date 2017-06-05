@@ -3,29 +3,23 @@
 @import url("//hello.myfonts.net/count/2d459c");
 
 @font-face {
-  font-family:'NimbusSan-Reg';
-  src: url('//p5.zdassets.com/hc/theme_assets/165365/200371467/NimbusSan-Reg_gdi.eot');
-  src: url('//p5.zdassets.com/hc/theme_assets/165365/200371467/NimbusSan-Reg_gdi.eot?#iefix') format('embedded-opentype'),
-  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/NimbusSan-Reg_gdi.woff') format('woff'),
-  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/NimbusSan-Reg_gdi.ttf') format('truetype'),
-  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/NimbusSan-Reg_gdi.svg#NimbusSan-Reg') format('svg');
+  font-family:'FFMarkWebProMedium';
+  src: url('//p5.zdassets.com/hc/theme_assets/165365/200371467/30AF5D_1_0.eot');
+  src: url('//p5.zdassets.com/hc/theme_assets/165365/200371467/30AF5D_1_0.eot?#iefix') format('embedded-opentype'),
+  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/30AF5D_1_0.woff') format('woff'),
+  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/30AF5D_1_0.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-FB04;
 }
 
 @font-face {
-  font-family:'NimbusSan-Lig';
-  src: url('//p5.zdassets.com/hc/theme_assets/165365/200371467/NimbusSan-Lig_gdi.eot');
-  src: url('//p5.zdassets.com/hc/theme_assets/165365/200371467/NimbusSan-Lig_gdi.eot?#iefix') format('embedded-opentype'),
-  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/NimbusSan-Lig_gdi.woff') format('woff'),
-  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/NimbusSan-Lig_gdi.ttf') format('truetype'),
-  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/NimbusSan-Lig_gdi.svg#NimbusSan-Lig') format('svg');
+  font-family:'FFMarkWebPro';
+  src: url('//p5.zdassets.com/hc/theme_assets/165365/200371467/30AF5D_0_0.eot');
+  src: url('//p5.zdassets.com/hc/theme_assets/165365/200371467/30AF5D_0_0.eot?#iefix') format('embedded-opentype'),
+  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/30AF5D_0_0.woff') format('woff'),
+  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/30AF5D_0_0.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-FB04;
 }
 
 @font-face {
@@ -100,7 +94,7 @@
 body {
   background-color: $color_5;
   color: $color_3;
-  font-family: "NimbusSan-Lig", "Helvetica Neue", sans-serif;
+  font-family: "FFMarkWebPro", "Helvetica Neue", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
@@ -114,7 +108,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "NimbusSan-Reg", "Helvetica Neue", sans-serif;
+  font-family: "FFMarkWebProMedium", "Helvetica Neue", sans-serif;
   font-weight: 400;
   margin-top: 0;
 }
@@ -145,7 +139,7 @@ a:hover, a:active, a:focus {
 }
 
 b, strong{
-  font-family: "NimbusSan-Reg", "Helvetica Neue", sans-serif;
+  font-family: "FFMarkWebProMedium", "Helvetica Neue", sans-serif;
   font-weight: 400;
 }
 
@@ -1839,7 +1833,7 @@ ul {
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
   word-break: break-word;
-  font-family: "NimbusSan-Lig", "Helvetica Neue", sans-serif;
+  font-family: "FFMarkWebPro", "Helvetica Neue", sans-serif;
   line-height: 1.6;
 }
 
@@ -2107,7 +2101,7 @@ ul {
   content: attr(data-follower-count);
   color: $color_1;
   display: inline-block;
-  font-family: "NimbusSan-Reg", "Helvetica Neue", sans-serif;
+  font-family: "FFMarkWebProMedium", "Helvetica Neue", sans-serif;
   margin-left: 15px;
   padding-left: 10px;
   position: absolute;
@@ -2376,7 +2370,7 @@ ul {
 }
 
 .post-content {
-  font-family: "NimbusSan-Lig", "Helvetica Neue", sans-serif;
+  font-family: "FFMarkWebPro", "Helvetica Neue", sans-serif;
   line-height: 1.6;
   word-break: break-word;
 }

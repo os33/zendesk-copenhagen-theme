@@ -144,6 +144,11 @@ a:hover, a:active, a:focus {
   text-decoration: underline;
 }
 
+b, strong{
+  font-family: "NimbusSan-Reg", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+
 input,
 textarea {
   color: #000;
@@ -911,6 +916,14 @@ ul {
   margin: 0 0 30px;
   max-width: 100%;
   text-align: center;
+}
+
+.categories .blocks-item {
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
 }
 
 @media (min-width: 768px) {

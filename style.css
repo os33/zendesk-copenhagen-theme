@@ -139,8 +139,7 @@ a:hover, a:active, a:focus {
 }
 
 b, strong{
-  font-family: "FFMarkWebProMedium", "Helvetica Neue", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 input,
@@ -1233,6 +1232,12 @@ ul {
   * 17%     | 66%     | 17%
   */
   flex: 1 0 auto;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.article .wysiwyg-font-size-x-large{
+  font-family: "FFMarkWebProMedium", "Helvetica Neue", sans-serif;
+
 }
 
 @media (min-width: 1024px) {

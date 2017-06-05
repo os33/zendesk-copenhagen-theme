@@ -1526,7 +1526,7 @@ ul {
 }
 
 .sidenav-title {
-  font-size: 15px;
+  font-size: 16px;
   position: relative;
 }
 
@@ -1540,8 +1540,8 @@ ul {
 }
 
 .sidenav-item.current-article, .sidenav-item:hover {
-  background-color: $color_1;
-  color: $color_2;
+  font-family: "FFMarkWebProMedium", "Helvetica Neue", sans-serif;
+  color: $color_3;
   text-decoration: none;
 }
 

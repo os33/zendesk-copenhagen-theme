@@ -4,23 +4,6 @@
     {{breadcrumbs}}
     {{search submit=false}}
   </nav>
-  <div style='float: left; width: 200px'>
-    <div>
-      {{#is category.id 204084368 }}
-      <div style='position: fixed; width: 200px '>
-        <ul>
-          {{#each sections}}
-          <li class="section-name">
-            <a href="{{url}}">{{name}}</a>
-          </li>
-          {{/each}}
-        </ul>
-      </div>
-      {{/is}}
-    </div>
-
-  </div>
-
 
   <div class="category-container">
     <div class="category-content">
@@ -34,12 +17,12 @@
       <div class="section-tree">
         {{#each sections}}
         <section class="section">
-          <h3 class="section-tree-title">
+          <h2 class="section-tree-title">
             <a href="{{url}}">{{name}}</a>
             {{#if internal}}
             <span class="icon-lock" title="{{t 'internal'}}"></span>
             {{/if}}
-          </h3>
+          </h2>
           {{#if articles}}
           <ul class="article-list">
             {{#each articles}}

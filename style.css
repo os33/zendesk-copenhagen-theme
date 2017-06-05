@@ -1169,9 +1169,9 @@ ul {
   vertical-align: baseline;
 }
 
-.section-tree-title {
+.section .section-tree-title {
   margin-bottom: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .section-tree-title a {

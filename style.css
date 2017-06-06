@@ -741,8 +741,8 @@ ul {
 }
 
 .search input[type="search"] {
-  border: 1px solid #ddd;
-  border-radius: 30px;
+  border: 1px solid #8e8e8e;
+  border-radius: 2px;
   box-sizing: border-box;
   color: #999;
   height: 40px;
@@ -780,7 +780,7 @@ ul {
 }
 
 .search-full input[type="search"] {
-  border: 1px solid #fff;
+  border: 1px solid #8e8e8e;
 }
 
 /***** Hero component *****/

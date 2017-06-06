@@ -3201,6 +3201,10 @@ ul {
   justify-content: space-between;
 }
 
+.search-result-link{
+  font-family: "FFMarkWebProMedium", "Helvetica Neue", sans-serif;
+}
+
 @media (min-width: 1024px) {
   .search-results {
     flex-direction: row;

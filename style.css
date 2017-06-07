@@ -764,6 +764,12 @@ ul {
   box-shadow: 0 5px 34px 0 rgba(135, 135, 135, 0.5);
   color: white;
   text-align: center;
+  width: 437px;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
 }
 
 
@@ -779,7 +785,9 @@ ul {
 
 .search-full input[type="search"]:focus {
   color: white;
-  border: none;
+  border: 1px solid white;
+  text-align: left;
+  padding-left: 20px;
 }
 
 .search-full input[type="search"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */

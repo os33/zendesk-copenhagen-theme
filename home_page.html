@@ -34,7 +34,12 @@
         {{#isnt id 115000243288}}
         <li class="blocks-item">
           <a href='{{url}}' class="blocks-item-link">
-            <h4 class="blocks-item-title">{{name}}</h4>
+            <h4 class="blocks-item-title">
+              {{#is id 115001372327}}<span class="w w-icon-helpcenter-master-workplace w-4x"></span>{{/is}}
+              {{#is id 204086567}}<span class="w w-icon-helpcenter-use-workplace w-4x"></span>{{/is}}
+              {{#is id 115000925828}}<span class="w w-icon-helpcenter-manage-workplace w-4x"></span>{{/is}}
+              {{name}}
+            </h4>
             <p class="blocks-item-description">{{excerpt description}}</p>
           </a>
         </li>

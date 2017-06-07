@@ -925,15 +925,38 @@ ul {
   transition: all 200ms ease;
 }
 
-.blocks-item .w-4x{
+.blocks-item .w-3x{
   position: relative;
-  height: 46px;
+  height: 35px;
+  font-size: 50px;
   margin-top: 6px;
 }
 
 @media (min-width: 768px) {
   .blocks-item {
     margin: 0 15px 30px;
+  }
+
+  .blocks-item .w-icon-helpcenter-use-workplace{
+    margin-top: -15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .blocks-item .w-icon-helpcenter-use-workplace{
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 1160px) {
+  .blocks-item .w-icon-helpcenter-use-workplace{
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .blocks-item .w-icon-helpcenter-use-workplace{
+    margin-top: -15px;
   }
 }
 

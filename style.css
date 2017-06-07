@@ -24,12 +24,12 @@
 
 @font-face {
   font-family: "worplace-icon-font";
-  src: url('//p5.zdassets.com/hc/theme_assets/165365/200371467/w-icon-font.eot');
-  src: url('//p5.zdassets.com/hc/theme_assets/165365/200371467/w-icon-font.eot?#iefix') format('eot'),
-  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/w-icon-font.woff2') format('woff2'),
-  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/w-icon-font.woff') format('woff'),
-  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/w-icon-font.ttf') format('truetype'),
-  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/w-icon-font.svg#worplace-icon-font') format('svg');
+  src: url('//p5.zdassets.com/hc/theme_assets/165365/200371467/wp-icon-font.eot');
+  src: url('//p5.zdassets.com/hc/theme_assets/165365/200371467/wp-icon-font.eot?#iefix') format('eot'),
+  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/wp-icon-font.woff2') format('woff2'),
+  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/wp-icon-font.woff') format('woff'),
+  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/wp-icon-font.ttf') format('truetype'),
+  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/wp-icon-font.svg#worplace-icon-font') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -77,8 +77,8 @@
 .w-icon-directory:before { content: "\EA0F" }
 .w-icon-file:before { content: "\EA10" }
 .w-icon-folder:before { content: "\EA11" }
-.w-icon-helpcenter-manage-workplace:before { content: "\EA12" }
-.w-icon-helpcenter-manageworkplace:before { content: "\EA13" }
+.w-icon-helpcenter-administer-workplace-companies:before { content: "\EA12" }
+.w-icon-helpcenter-manage-teams:before { content: "\EA13" }
 .w-icon-helpcenter-master-workplace:before { content: "\EA14" }
 .w-icon-helpcenter-support-workplace:before { content: "\EA15" }
 .w-icon-helpcenter-use-workplace:before { content: "\EA16" }
@@ -925,6 +925,12 @@ ul {
   transition: all 200ms ease;
 }
 
+.blocks-item .w-4x{
+  position: relative;
+  height: 46px;
+  margin-top: 6px;
+}
+
 @media (min-width: 768px) {
   .blocks-item {
     margin: 0 15px 30px;
@@ -951,11 +957,6 @@ ul {
 
 .blocks-item-title {
   margin-bottom: 0;
-}
-
-.blocks-item-title .w-4x{
-  top: 26px;
-  position: relative;
 }
 
 .blocks-item-description {

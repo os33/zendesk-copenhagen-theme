@@ -77,13 +77,20 @@
 .w-icon-directory:before { content: "\EA0F" }
 .w-icon-file:before { content: "\EA10" }
 .w-icon-folder:before { content: "\EA11" }
-.w-icon-launch:before { content: "\EA12" }
-.w-icon-password:before { content: "\EA13" }
-.w-icon-profile:before { content: "\EA14" }
-.w-icon-recent:before { content: "\EA15" }
-.w-icon-shared:before { content: "\EA16" }
-.w-icon-theme:before { content: "\EA17" }
-.w-icon-websites:before { content: "\EA18" }
+.w-icon-helpcenter-manage-workplace:before { content: "\EA12" }
+.w-icon-helpcenter-manageworkplace:before { content: "\EA13" }
+.w-icon-helpcenter-master-workplace:before { content: "\EA14" }
+.w-icon-helpcenter-support-workplace:before { content: "\EA15" }
+.w-icon-helpcenter-use-workplace:before { content: "\EA16" }
+.w-icon-launch:before { content: "\EA17" }
+.w-icon-password:before { content: "\EA18" }
+.w-icon-profile:before { content: "\EA19" }
+.w-icon-recent copy:before { content: "\EA1A" }
+.w-icon-recent:before { content: "\EA1B" }
+.w-icon-shared:before { content: "\EA1C" }
+.w-icon-slash:before { content: "\EA1D" }
+.w-icon-theme:before { content: "\EA1E" }
+.w-icon-websites:before { content: "\EA1F" }
 
 
 /***** Base *****/

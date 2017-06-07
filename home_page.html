@@ -1,6 +1,6 @@
 <section class="section hero">
   <div class="hero-inner">
-    {{search submit=false instant=true class='search search-full'}}
+    {{search submit=false instant=true class='search search-full' placeholder='Search for a topic or keyword'}}
   </div>
 </section>
 
@@ -33,9 +33,9 @@
         {{#each categories}}
         {{#isnt id 115000243288}}
         <li class="blocks-item">
-          {{#is id 115001372327}}<span class="w w-icon-helpcenter-master-workplace w-4x"></span>{{/is}}
-          {{#is id 204086567}}<span class="w w-icon-helpcenter-use-workplace w-4x" style="margin-top: -19px;"></span>{{/is}}
-          {{#is id 115000925828}}<span class="w w-icon-helpcenter-manage-teams w-4x"></span>{{/is}}
+          {{#is id 115001372327}}<span class="w w-icon-helpcenter-master-workplace w-3x"></span>{{/is}}
+          {{#is id 204086567}}<span class="w w-icon-helpcenter-use-workplace w-3x"></span>{{/is}}
+          {{#is id 115000925828}}<span class="w w-icon-helpcenter-manage-teams w-3x"></span>{{/is}}
           <a href='{{url}}' class="blocks-item-link">
             <h4 class="blocks-item-title">
               {{name}}

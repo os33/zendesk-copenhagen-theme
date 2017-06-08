@@ -1318,7 +1318,7 @@ ul {
 .negative-followup__c {
   display: none;
   padding: 10px;
-  margin: 18px 0px;
+  margin: 0px 0px;
   width: 100%;
   text-align: center;
 }
@@ -1340,6 +1340,11 @@ ul {
 .negative-followup__c p span{
   position: relative;
   top: 8px;
+}
+
+.negative-followup__c .after-feedback{
+  text-align: center;
+  margin: 40px 0 60px;
 }
 
 @media (min-width: 1024px) {

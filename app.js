@@ -130,7 +130,7 @@ $(document).ready(function() {
             data: {payload: payload}
         })
             .done(function() {
-                $('.negative-followup__c').html('<p>Thanks for your feedback!</p>');
+                $('.negative-followup__c').html('<p class="after-feedback"><strong>Thank you very much for your feedback!</strong><br/>Please <a href="https://help.workplace.co/hc/en-us/articles/115007920408-Contact-support">contact support</a> to get help.</p>');
             });
     });
 

@@ -4272,3 +4272,7 @@ table.standard td ul {
 .article-body h4 {
   text-shadow: 1px 1px 3px #909090;
 }
+
+.search-full input[type="search"] {
+  border: 1px solid #fd2a10;
+}

@@ -1586,8 +1586,11 @@ ul {
 .article-more-questions {
   margin: 10px 0 20px;
   text-align: center;
-  padding-top: 20px;
+}
+
+.article-more-questions.not-agent{
   border-top: 1px solid #ddd;
+  padding-top: 20px;
 }
 
 .article-return-to-top {

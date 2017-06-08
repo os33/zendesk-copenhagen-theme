@@ -81,6 +81,8 @@
 
       <footer>
         <div class="article-footer">
+          <input type="hidden" value="{{article.url}}" class="article-url" />
+          <input type="hidden" value="{{article.title}}" class="article-title" />
           {{#if comments}}
           <a href="#article-comments" class="article-comment-count">
             <span class="icon-comments"></span>

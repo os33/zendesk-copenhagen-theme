@@ -107,16 +107,32 @@ $(document).ready(function() {
         this.setAttribute("aria-expanded", !isExpanded);
     });
 
-  /*  $('.article-votes-controls').on('click',function(){
-   console.log('test');
-   setTimeout(function(){
-   if ($('.article-votes-controls>a[title="No"]').attr('aria-selected')=='true') {
-   $('.negative-followup__c').show(500);
-   } else {
-   $('.negative-followup__c').hide(150);
-   }
-   },600);
-   }); */
+    $('.article-votes-controls').on('click',function(){
+        setTimeout(function(){
+            if ($('.article-votes-controls>a[title="No"]').attr('aria-selected')=='true') {
+                $('.negative-followup__c').show(500);
+            } else {
+                $('.negative-followup__c').hide(150);
+            }
+        },600);
+    });
+
+    $('.send-article-feedback').on('click', function() {
+        var feedbackContent = $('.article-feedback').val();
+        var articleUrl = $('input.article-url').val();
+        var articleTitle = $('input.article-title').val();
+
+        var payloadJSON = {"text": '<https://help.workplace.co' + articleUrl + '|' + articleTitle + '>' + '\nWhat problem did you have that this article didn’t address?\n' + feedbackContent, "username": 'helpCenterBot'};
+        var payload = JSON.stringify(payloadJSON);
+        $.ajax({
+            method: 'POST',
+            url: 'https://hooks.slack.com/services/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',
+            data: {payload: payload}
+        })
+            .done(function() {
+                $('.negative-followup__c').html('<p>Thanks for your feedback!</p>');
+            });
+    });
 
     if (HelpCenter.user.role=="anonymous" || HelpCenter.user.role=="end_user"){
         $(".article-more-questions").addClass('not-agent');

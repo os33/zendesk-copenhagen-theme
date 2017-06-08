@@ -844,7 +844,7 @@ ul {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  max-width: 610px;
+  max-width: 437px;
   margin: 0 auto;
 }
 
@@ -1314,6 +1314,34 @@ ul {
 
 }
 
+/* ---- negative followup ----------- */
+.negative-followup__c {
+  display: none;
+  padding: 10px;
+  margin: 18px 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.article-feedback{
+  width: 100%;
+  height: 217px;
+}
+
+.send-article-feedback{
+  float: right;
+}
+
+.negative-followup__c p{
+  text-align: left;
+  font-size: 14px;
+}
+
+.negative-followup__c p span{
+  position: relative;
+  top: 8px;
+}
+
 @media (min-width: 1024px) {
   .article {
     flex: 1 0 66%;
@@ -1558,6 +1586,8 @@ ul {
 .article-more-questions {
   margin: 10px 0 20px;
   text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
 }
 
 .article-return-to-top {

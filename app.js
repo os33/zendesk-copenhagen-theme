@@ -137,4 +137,8 @@ $(document).ready(function() {
     if (HelpCenter.user.role=="anonymous" || HelpCenter.user.role=="end_user"){
         $(".article-more-questions").addClass('not-agent');
     }
+
+    setTimeout(function() {
+        $('.search-full input').focus();
+    }, 300);
 });

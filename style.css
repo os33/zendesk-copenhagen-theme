@@ -24,12 +24,12 @@
 
 @font-face {
   font-family: "worplace-icon-font";
-  src: url('//p5.zdassets.com/hc/theme_assets/165365/200371467/wp-icon-font.eot');
-  src: url('//p5.zdassets.com/hc/theme_assets/165365/200371467/wp-icon-font.eot?#iefix') format('eot'),
-  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/wp-icon-font.woff2') format('woff2'),
-  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/wp-icon-font.woff') format('woff'),
-  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/wp-icon-font.ttf') format('truetype'),
-  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/wp-icon-font.svg#worplace-icon-font') format('svg');
+  src: url('//p5.zdassets.com/hc/theme_assets/165365/200371467/wphc-icon-font.eot');
+  src: url('//p5.zdassets.com/hc/theme_assets/165365/200371467/wphc-icon-font.eot?#iefix') format('eot'),
+  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/wphc-icon-font.woff2') format('woff2'),
+  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/wphc-icon-font.woff') format('woff'),
+  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/wphc-icon-font.ttf') format('truetype'),
+  url('//p5.zdassets.com/hc/theme_assets/165365/200371467/wphc-icon-font.svg#worplace-icon-font') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -66,31 +66,29 @@
 .w-icon-big-help:before { content: "\EA04" }
 .w-icon-big-profile:before { content: "\EA05" }
 .w-icon-big-signout:before { content: "\EA06" }
-.w-icon-close:before { content: "\EA07" }
-.w-icon-companyactvity:before { content: "\EA08" }
-.w-icon-companyadmin:before { content: "\EA09" }
-.w-icon-companyadmin_large:before { content: "\EA0A" }
-.w-icon-companydevices:before { content: "\EA0B" }
-.w-icon-companyfiles:before { content: "\EA0C" }
-.w-icon-companywebsites:before { content: "\EA0D" }
-.w-icon-devices:before { content: "\EA0E" }
-.w-icon-directory:before { content: "\EA0F" }
-.w-icon-file:before { content: "\EA10" }
-.w-icon-folder:before { content: "\EA11" }
-.w-icon-helpcenter-administer-workplace-companies:before { content: "\EA12" }
-.w-icon-helpcenter-manage-teams:before { content: "\EA13" }
-.w-icon-helpcenter-master-workplace:before { content: "\EA14" }
-.w-icon-helpcenter-support-workplace:before { content: "\EA15" }
-.w-icon-helpcenter-use-workplace:before { content: "\EA16" }
-.w-icon-launch:before { content: "\EA17" }
-.w-icon-password:before { content: "\EA18" }
-.w-icon-profile:before { content: "\EA19" }
-.w-icon-recent copy:before { content: "\EA1A" }
-.w-icon-recent:before { content: "\EA1B" }
-.w-icon-shared:before { content: "\EA1C" }
-.w-icon-slash:before { content: "\EA1D" }
-.w-icon-theme:before { content: "\EA1E" }
-.w-icon-websites:before { content: "\EA1F" }
+.w-icon-companyactvity:before { content: "\EA07" }
+.w-icon-companyadmin:before { content: "\EA08" }
+.w-icon-companydevices:before { content: "\EA09" }
+.w-icon-companyfiles:before { content: "\EA0A" }
+.w-icon-companywebsites:before { content: "\EA0B" }
+.w-icon-devices:before { content: "\EA0C" }
+.w-icon-directory:before { content: "\EA0D" }
+.w-icon-file:before { content: "\EA0E" }
+.w-icon-folder:before { content: "\EA0F" }
+.w-icon-helpcenter-administer-workplace-companies:before { content: "\EA10" }
+.w-icon-helpcenter-manage-teams:before { content: "\EA11" }
+.w-icon-helpcenter-master-workplace:before { content: "\EA12" }
+.w-icon-helpcenter-search_icon:before { content: "\EA13" }
+.w-icon-helpcenter-support-workplace:before { content: "\EA14" }
+.w-icon-helpcenter-use-workplace:before { content: "\EA15" }
+.w-icon-launch:before { content: "\EA16" }
+.w-icon-password:before { content: "\EA17" }
+.w-icon-profile:before { content: "\EA18" }
+.w-icon-recent:before { content: "\EA19" }
+.w-icon-shared:before { content: "\EA1A" }
+.w-icon-slash:before { content: "\EA1B" }
+.w-icon-theme:before { content: "\EA1C" }
+.w-icon-websites:before { content: "\EA1D" }
 
 
 /***** Base *****/
@@ -765,17 +763,19 @@ ul {
   color: white;
   text-align: center;
   width: 437px;
+  height: 47px;
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
   -ms-transition: all 200ms ease;
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
+  font-family: "FFMarkWebProMedium", "Helvetica Neue", sans-serif;
 }
 
 
 [dir="rtl"] .search input[type="search"] {
   padding-right: 40px;
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
 .search input[type="search"]:focus {
@@ -787,7 +787,7 @@ ul {
   color: white;
   border: 1px solid white;
   text-align: left;
-  padding-left: 20px;
+  padding-left: 35px;
 }
 
 .search-full input[type="search"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -807,16 +807,17 @@ ul {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #fff;
-  color: #ddd;
-  content: "\1F50D";
+  color: #999;
+  content: "\EA13";
   font-size: 18px;
   position: absolute;
-  left: 15px;
+  left: 5px;
+  font-family: "worplace-icon-font" !important;
+  font-size: 28px;
 }
 
 .search-full::before {
-  display: none;
+  color: #fff;
 }
 
 
@@ -1423,6 +1424,11 @@ ul {
   display: inline-block;
   margin-left: 10px;
   vertical-align: middle;
+}
+
+.article-body .w {
+  top: 1px;
+  position: relative;
 }
 
 .article-body img {
